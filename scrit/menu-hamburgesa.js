@@ -1,16 +1,16 @@
-const menuHmburgesa = () => {
+export default function menuHmburgesa() {
   const d = document;
-  const toggleButton = d.getElementById("button-menu");
-  const navWrapper = d.getElementById("nav");
+  const $toggleButton = d.getElementById("button-menu");
+  const $navWrapper = d.getElementById("nav");
 
   /* 
   cada ves que se haga click en el botón 
   agrega y quita las clases necesarias 
   para que el menú se muestre.
 */
-  toggleButton.addEventListener("click", () => {
-    toggleButton.classList.toggle("close");
-    navWrapper.classList.toggle("show");
+  $toggleButton.addEventListener("click", () => {
+    $toggleButton.classList.toggle("close");
+    $navWrapper.classList.toggle("show");
   });
 
   /* 
@@ -18,12 +18,10 @@ const menuHmburgesa = () => {
   el menú debe esconderse.
 */
 
-  navWrapper.addEventListener("click", (e) => {
+  $navWrapper.addEventListener("click", (e) => {
     if (e.target.id === "nav") {
-      navWrapper.classList.remove("show");
-      toggleButton.classList.remove("close");
+      $navWrapper.classList.remove("show");
+      $toggleButton.classList.remove("close");
     }
   });
-};
-
-export default menuHmburgesa();
+}

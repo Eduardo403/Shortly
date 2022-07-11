@@ -87,14 +87,12 @@ p {
 
 .main-nav {
   position: fixed;
-  top: 2px;
-  left: 2px;
-  height: 70vh;
-  width: 70%;
+  top: 50px;
+  width: 90%;
+  margin: 1.5rem 0.5rem;
+  height: 20rem;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.2s linear;
-  background-color: var(--Dark-Violet);
   z-index: 100;
 }
 
@@ -105,30 +103,30 @@ p {
 
 .nav-links {
   background-color: var(--Dark-Violet);
+  border-radius: 0.5rem;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
-  width: 70%;
-  height: 30%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav-links hr {
+  width: 80%;
+  color: var(--Gray);
 }
 
 .link-item {
-  margin-top: 2rem;
-  color: #444444;
   text-decoration: none;
-  font-weight: bold;
-  position: relative;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0.4rem;
+  padding: 0.4rem;
 }
 
-.link-item::after {
-  position: absolute;
-  content: "";
-  background-color: black;
-  bottom: -5px;
-  left: 0;
-  width: 0%;
-  height: 3px;
+.link-item:hover {
+  color: var(--Cyan);
+  border-bottom: 2px solid var(--Gray);
   transition: 0.3s ease all;
 }
 
@@ -163,7 +161,7 @@ p {
 .button-menu.close span {
   opacity: 1;
   transform: rotate(45deg) translate(0px, 0px);
-  background: #ffffff;
+  background: var(--Dark-Violet);
 }
 
 .button-menu.close span:nth-child(2) {
@@ -172,6 +170,24 @@ p {
 
 .button-menu.close span:nth-child(3) {
   display: none;
+}
+
+.btn-login {
+  border-radius: 1.5rem;
+  font-size: 18px;
+  padding: 0.6rem;
+  margin: 0.8rem;
+  display: inline-block;
+  width: 10rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--Gray);
+  background-color: var(--Cyan);
+}
+.btn-login:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 768px) {
@@ -187,7 +203,6 @@ p {
     position: static;
     margin-left: 0;
     flex-basis: 70%;
-    height: 100%;
   }
 
   .nav-links {
@@ -196,7 +211,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    background: white;
+    color: var(--Grayish-Violet);
   }
 
   .link-item {
