@@ -69,11 +69,23 @@ p {
 }
 
 /************utitilitis*****************/
+.error {
+  height: 4rem;
+  background-color: #ca2121;
+  width: 100%;
+  padding: 1rem;
+  font-family: sans-serif;
+  font-family: 8vh;
+  text-align: center;
+  align-items: center;
+}
 
 .loadin {
   display: none;
+
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: auto;
   margin: 3rem;
