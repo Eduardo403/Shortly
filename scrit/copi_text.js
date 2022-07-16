@@ -5,7 +5,16 @@ export function buttonCopy() {
 
   $buttonCopy.addEventListener("click", (e) => {
     e.preventDefault();
-    alert("pin");
+    // alert("prueba");
     let $shorUrl = d.getElementById("copy").textContent;
+    navigator.clipboard.writeText($shorUrl).then(
+      (success) => {
+        $buttonCopy.textContent = `Copied!`;
+        $buttonCopy.style.backgroundColor = "var(--Dark-Violet)";
+      },
+      (err) => console.log("error copying text")
+    );
+
+    console.log($shorUrl);
   });
 }
