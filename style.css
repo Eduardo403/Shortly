@@ -85,7 +85,8 @@ p {
 
   justify-content: center;
   align-items: center;
-  text-align: center;
+  z-index: 10;
+  opacity: 0.8;
   width: 100%;
   height: auto;
   margin: 3rem;
@@ -313,7 +314,7 @@ p {
   font-size: 2.5vh;
 }
 
-/***************from-de-url-ends****************/
+/***************root-url-api-short****************/
 #root-url {
   margin: 0;
   padding: 0.4rem;
@@ -346,10 +347,6 @@ p {
   font-family: sans-serif;
 }
 
-#copy {
-  color: var(--Cyan);
-}
-
 #copy-button {
   width: 90%;
   height: 2rem;
@@ -363,7 +360,64 @@ p {
   cursor: pointer;
   opacity: 0.8;
 }
+#copy-short-url {
+  color: var(--Cyan);
+}
+
+/*****************section-stadist****************/
+.features {
+  background-color: var(--Gray);
+  margin: 0;
+  padding: 1rem;
+}
+
+.features hr {
+  width: 0.5rem;
+  height: 4.2rem;
+  background-color: var(--Cyan);
+  border: thin solid var(--Cyan);
+  margin-top: 0;
+}
+
+.title {
+  padding: 0.4rem;
+  margin: 2.7rem 0.8rem;
+  text-align: center;
+  align-items: center;
+}
+
+.img-cart {
+  background-color: white;
+  padding: 0.6rem;
+  margin: 1rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.img-cart h3 {
+  margin: 1.2rem 0.8rem;
+}
+.img-cart p {
+  margin: 0.7rem 1rem;
+  font-size: 2vh;
+  text-align: center;
+}
+.icon {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  background-color: var(--Dark-Violet);
+  padding: 1.4rem;
+  margin-top: -3rem;
+}
+
 @media screen and (min-width: 768px) {
+  /******************header*****************/
   .button-menu {
     display: none;
   }
@@ -444,5 +498,62 @@ p {
   }
   #url {
     width: 75%;
+  } /***************root-url-api-short****************/
+
+  .conteiner-url {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+  }
+  .conteiner-url hr {
+    opacity: 0;
+  }
+
+  #copy-button {
+    width: 40%;
+    margin: auto 0.4rem;
+  }
+  /********section-features*********/
+  .features {
+    display: grid;
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .features hr {
+    height: 0.5rem;
+    width: 3.1rem;
+    margin: auto 0;
+  }
+  .title {
+    grid-column: 1 / span 5;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: 1rem auto;
+  }
+
+  .img-cart {
+    height: 13rem;
+    width: 16rem;
+    padding: 0.2;
+    margin: 0.4rem 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .img-cart h3 {
+    margin: 0.8rem;
+  }
+
+  .img-cart p {
+    text-align: left;
+  }
+  .features div:nth-child(2) {
+    margin-top: -20px;
+  }
+  .features div:last-child {
+    margin-top: 30px;
   }
 }
