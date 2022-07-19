@@ -98,6 +98,22 @@ p {
   width: 40%;
 }
 
+.attribution {
+  background-color: var(--Very-Dark-Violet);
+  font-family: sans-serif;
+  text-align: left;
+  color: var(--Gray);
+  font-size: 1.8vh;
+  padding: 0.4rem;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Cyan);
+}
+
 /*****************syte-style***************/
 
 /*******************header*****************/
@@ -221,6 +237,11 @@ p {
 }
 
 /***************************home*****************/
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 0 2rem;
+}
 .hero-img-home {
   width: 100%;
   height: 60%;
@@ -271,6 +292,11 @@ p {
   opacity: 0.8;
 }
 /******************frormulario*********************/
+.pricing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
 .from-url {
   display: flex;
   flex-direction: column;
@@ -366,8 +392,9 @@ p {
 
 /*****************section-stadist****************/
 .features {
+  max-width: 1200px;
   background-color: var(--Gray);
-  margin: 0;
+  margin: 0 auto;
   padding: 1rem;
 }
 
@@ -414,6 +441,84 @@ p {
   background-color: var(--Dark-Violet);
   padding: 1.4rem;
   margin-top: -3rem;
+}
+
+/****************get-link***************/
+.get-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 18rem;
+  background-color: var(--Dark-Violet);
+  background-image: url("./images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.get-link h2 {
+  font-size: 4.2vh;
+  color: var(--Gray);
+  margin: 1rem;
+  font-family: sans-serif;
+}
+.get-link a {
+  height: 2.7rem;
+  font-size: 3.2vh;
+}
+
+/**************contact-footer**************/
+.contact-footer {
+  margin: 0;
+  padding: 1rem auto;
+  background-color: var(--Very-Dark-Violet);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-footer svg {
+  margin: 1.6rem auto;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.article h4 {
+  font-family: sans-serif;
+  color: #f3f3f5;
+  margin: 1rem auto;
+}
+
+.article a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: var(--Gray);
+  margin: 0.6rem auto;
+}
+
+.article a:hover {
+  color: var(--Cyan);
+}
+
+.social-media a {
+  text-decoration: none;
+  padding: 0.6rem;
+}
+
+.social-media a:hover svg {
+  opacity: 1;
+  fill: #8152d8;
 }
 
 @media screen and (min-width: 768px) {
@@ -499,7 +604,9 @@ p {
   #url {
     width: 75%;
   } /***************root-url-api-short****************/
-
+  .Pricing {
+    margin: 0 1rem;
+  }
   .conteiner-url {
     flex-direction: row;
     justify-content: space-between;
@@ -516,14 +623,15 @@ p {
   /********section-features*********/
   .features {
     display: grid;
-
+    grid-gap: 0;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, auto);
+    align-items: center;
   }
 
   .features hr {
     height: 0.5rem;
-    width: 3.1rem;
+    width: 7vh;
     margin: auto 0;
   }
   .title {
@@ -555,5 +663,30 @@ p {
   }
   .features div:last-child {
     margin-top: 30px;
+  }
+
+  .get-link {
+    background-image: url("./images/bg-boost-desktop.svg");
+  }
+  .get-link h2 {
+    font-size: 6.2vh;
+  }
+  .get-link a {
+    width: 10rem;
+  }
+
+  .contact-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .article {
+    align-items: stretch;
+    justify-content: stretch;
+    margin: 1rem auto;
+    padding: auto;
+  }
+  .article h4 {
+    margin-top: 0;
   }
 }
