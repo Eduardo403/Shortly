@@ -29,7 +29,6 @@ body {
 }
 
 a {
-  color: var(--Grayish-Blue);
   transition: all 0.5s ease-out;
 }
 
@@ -178,7 +177,7 @@ p {
   border-bottom: 2px solid var(--Gray);
   transition: 0.3s ease all;
 }
-
+/**botton-vercion-movil***/
 .button-menu {
   z-index: 200;
   width: 40px;
@@ -216,7 +215,7 @@ p {
 .button-menu.close span:nth-child(3) {
   display: none;
 }
-
+/*****botton-menu-header*****/
 .btn-login {
   border-radius: 1.5rem;
   font-family: sans-serif;
@@ -236,7 +235,7 @@ p {
   opacity: 0.8;
 }
 
-/***************************home*****************/
+/************************section-home*****************/
 .home {
   max-width: 1200px;
   margin: 0 auto;
@@ -273,6 +272,7 @@ p {
   margin: 0.4rem 1rem;
   padding: 0.4rem;
 }
+/******botton-home*******/
 .btn-get {
   border-radius: 1.5rem;
   font-family: sans-serif;
@@ -291,7 +291,7 @@ p {
   cursor: pointer;
   opacity: 0.8;
 }
-/******************frormulario*********************/
+/******************frormulario-api*********************/
 .pricing {
   max-width: 1200px;
   margin: 0 auto;
@@ -340,7 +340,7 @@ p {
   font-size: 2.5vh;
 }
 
-/***************root-url-api-short****************/
+/***************root-url-insertar-short****************/
 #root-url {
   margin: 0;
   padding: 0.4rem;
